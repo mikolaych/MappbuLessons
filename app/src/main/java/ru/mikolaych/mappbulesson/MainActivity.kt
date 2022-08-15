@@ -1,6 +1,7 @@
 package ru.mikolaych.mappbulesson
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+        val clickVaw = MediaPlayer.create(this, R.raw.click)
 
         //Загрузка фрагмента
 
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         //Выезжающая панель
         binding?.panel?.setOnClickListener(View.OnClickListener {
             val panel = BottomPanel()
+            clickVaw.start()
             //Передача параметров
             val parameters = Bundle()
             parameters.putCharSequence("nameBut", binding?.panel?.text)

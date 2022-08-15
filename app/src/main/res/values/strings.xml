@@ -2,4 +2,8 @@
     <string name="app_name">Mappbu lesson</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstRadio">First</string>
+    <string name="secondRadio">Second</string>
+    <string name="check">Check</string>
+    <string name="check2">Check 2</string>
 </resources>
